@@ -6,8 +6,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-
-
 @RestController
 @RequestMapping("/api/clientes")
 public class ClienteController {
@@ -26,8 +24,11 @@ public class ClienteController {
 
     @GetMapping("/{dni}")
     public ResponseEntity<Cliente> obtenerCliente(@PathVariable String dni) {
-        return clienteService.obtenerClientePorDni(dni)
-            .map(cliente -> ResponseEntity.ok(cliente))
-            .orElse(ResponseEntity.notFound().build());
+        Cliente cliente = (Cliente) clienteService.obtenerClientePorDni(dni);
+        if (cliente != null) {
+            return ResponseEntity.ok(cliente);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

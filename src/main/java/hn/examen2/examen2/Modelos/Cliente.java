@@ -35,7 +35,6 @@ public class Cliente {
     }
 
     public String getDni() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getDni'");
     }
 }

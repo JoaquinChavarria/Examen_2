@@ -22,8 +22,11 @@ public class PrestamoController {
 
     @GetMapping("/{codigoprestamo}")
     public ResponseEntity<Prestamo> obtenerPrestamo(@PathVariable Long codigoprestamo) {
-        return Prestamo.obtenerPrestamoPorCodigo(codigoprestamo)
-            .map(prestamo -> ResponseEntity.ok(prestamo))
-            .orElse(ResponseEntity.notFound().build());
+        Prestamo prestamo = (Prestamo) Prestamo.obtenerPrestamoPorCodigo(codigoprestamo);
+        if (prestamo != null) {
+            return ResponseEntity.ok(prestamo);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

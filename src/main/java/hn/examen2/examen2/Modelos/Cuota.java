@@ -27,5 +27,30 @@ public class Cuota {
     @JoinColumn(name = "codigoprestamo", nullable = false)
     private Prestamo prestamo;
 
+    public void setMes(int mes2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setMes'");
+    }
+
+    public void setSaldo(BigDecimal saldo2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setSaldo'");
+    }
+
+    public void setCapital(BigDecimal capital2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setCapital'");
+    }
+
+    public void setPrestamo(Prestamo prestamo2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setPrestamo'");
+    }
+
+    public void setInteres(BigDecimal interes2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setInteres'");
+    }
+
 
 }
