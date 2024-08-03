@@ -56,32 +56,32 @@ public class Prestamo {
     }
 
     public BigDecimal getTasaInteresAnual() {
-        // TODO Auto-generated method stub
+    
         throw new UnsupportedOperationException("Unimplemented method 'getTasaInteresAnual'");
     }
 
     public Object getFechaapertura() {
-        // TODO Auto-generated method stub
+      
         throw new UnsupportedOperationException("Unimplemented method 'getFechaapertura'");
     }
 
     public void setFechaapertura(Object fechaapertura2) {
-        // TODO Auto-generated method stub
+       
         throw new UnsupportedOperationException("Unimplemented method 'setFechaapertura'");
     }
 
     public void setMonto(BigDecimal monto2) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'setMonto'");
     }
 
     public void setPlazo(int plazo2) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'setPlazo'");
     }
 
     public void setCliente(Cliente cliente2) {
-        // TODO Auto-generated method stub
+       
         throw new UnsupportedOperationException("Unimplemented method 'setCliente'");
     }
 
